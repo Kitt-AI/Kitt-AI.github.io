@@ -1,0 +1,65 @@
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">Technologies</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#products">Products</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#footer">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; {{ site.title }} All Rights Reserved</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <ul class="list-inline social-icons icon-circle icon-zoom">
+                    <li><a href="{{ site.social.twitter }}"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="{{ site.social.github }}"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li><a href="{{ site.social.linkedin }}"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <!--
+                    <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    -->
+                    <li><a href="#contactForm" data-toggle="modal"><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 icon-rotate">
+              <p class='text-center text-muted text-small'> 
+              Made with <i class="fa fa-heart" style="color:red;"></i> in the city of
+              <i class="fa fa-coffee" style="color:#6F4E37;"></i><i class="fa fa-umbrella" style="color:#007FFF;"></i><i class="fa fa-plane" style="color:#0F52BA;"></i><i class="fa fa-diamond" style="color:#50C878;"></i></p>
+              <p>Incubated by the <a href="http://allenai.org">Allen Institute for Artificial Intelligence</a>
+              </p>
+            </div>
+        </div>
+    </div>
+
+<div id="contactForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    {{ site.google_contact_form }}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer>
