@@ -36,7 +36,7 @@ social:
   # we shouldn't define site.github since this is meta data exposed by github puages
   # JB/is_production uses it to determine production/development mode
   github: 'https://github.com/Kitt-AI/'
-  twitter: '#'
+  twitter: 'https://twitter.com/kitt_ai'
   linkedin: '#'
 
 address: '2157 N Northlake Way, Suite 110<br>
