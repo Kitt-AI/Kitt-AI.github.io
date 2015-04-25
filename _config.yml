@@ -27,8 +27,13 @@ exclude: ["README.md", "_include/JB", "Gemfile"]
 
 url: 'http://kitt.ai'
 production_url: 'http://kitt.ai'
+
+# For Search Engine Optimization
 name: 'KITT.AI'
-title: 'KITT.AI'
+author: 'Xuchen Yao'
+title: 'KITT.AI | Natural Language Understanding Made Easy'
+description: > 
+    "natural language understanding technologies about semantic parsing, question answering from web text and knowledge base, and hotword detection."
 
 
 social:
@@ -41,8 +46,6 @@ social:
 
 address: '2157 N Northlake Way, Suite 110<br>
           Seattle, WA 98103'
-description: > 
-    semantic parsing, question answering and hotword detection from kitt.ai
 
 timezone: 'America/Los_Angeles'
 # ----------------------- #

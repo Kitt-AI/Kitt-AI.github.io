@@ -1,10 +1,19 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+    {% else %}
+        <meta name="description" content="{{ site.description }}">
+    {% endif %}
+
+    {% if page.author %}
+        <meta name="author" content="{{ page.author }}">
+    {% else %}
+        <meta name="author" content="{{ site.author }}">
+    {% endif %}
 
 
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/blue-icon-32.ico">
