@@ -80,18 +80,16 @@ Directory structures:
 │   │   ├── home.html
 │   │   └── products.html
 │   ├── nav.html                 # nav bar
-│   └── posts                    # blog specific templates
-│       ├── body.html
-│       ├── index.html
-│       └── nav.html
+│   ├── posts_nav.html           # nav bar for blog
 ├── _layouts
-│   ├── blog.html
+│   ├── default.html
+│   ├── page.html
 │   ├── landing.html
 │   └── post.html
 ├── _posts                       # blog posts
-│   ├── 2011-12-29-jekyll-introduction.md
-│   ├── 2015-4-13-again-intro.md
-│   └── 2015-4-15-test3.md
+│   ├── 2015-4-13-question-answering.md
+│   ├── 2015-4-15-hotword-detection.md
+│   └── 2015-4-15-semantic-parsing.md
 ├── archive.html
 ├── assets
 │   ├── css
@@ -120,14 +118,13 @@ Directory structures:
 │       ├── jquery-1.11.0.js
 │       ├── jquery.easing.min.js
 │       └── landing-page.js     # customize your javascript
-├── atom.xml
 ├── blog                        # index.html for your.domain/blog
 │   └── index.html
 ├── categories.html
 ├── index.md                    # index.html for landing page
 ├── pages.html                  # blog page list
 ├── rss.xml
-├── sitemap.txt
+├── sitemap.xml
 └── tags.html
 ```
 Dev cycle:
@@ -146,7 +143,7 @@ Dev cycle:
 
 There are three layouts:
 
-1. blog (`_layouts/blog.html`): used for blog front page, archive, etc
+1. page (`_layouts/page.html`): used for blog front page, archive, etc
 2. post (`_layouts/post.html`): used for blog posts
 3. landing (`_layouts/landing.html`): used for your landing front page
 

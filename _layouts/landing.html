@@ -1,18 +1,9 @@
+---
+layout: default
+---
 {% include JB/setup %}
-<!DOCTYPE html>
-<html>
-	{% include head.html %}
-
-	<body>
-		{% include nav.html %}
-
-		{% include landing_page/home.html %}
-		{% include landing_page/about.html %}
-		{% include landing_page/products.html %}
-        {% comment %} {% include landing_page/contact.html %} {% endcomment %}
-
-		{% include footer.html %}
-		{% include js.html %}
-        {% include JB/analytics %}
-	</body>
-</html>
+{% include nav.html %}
+{% include landing_page/home.html %}
+{% include landing_page/about.html %}
+{% include landing_page/products.html %}
+{% comment %} {% include landing_page/contact.html %} {% endcomment %}
