@@ -33,7 +33,7 @@ name: 'KITT.AI'
 author: 'Xuchen Yao'
 title: 'KITT.AI | Natural Language Understanding Made Easy'
 description: > 
-    "natural language understanding technologies about semantic parsing, question answering from web text and knowledge base, and hotword detection."
+    natural language understanding technologies about semantic parsing, question answering from web text and knowledge base, and hotword detection.
 
 
 social:
@@ -56,6 +56,9 @@ timezone: 'America/Los_Angeles'
 markdown: kramdown
 paginate: 2
 paginate_path: "/blog/page:num/"
+
+gems:
+  - jekyll-sitemap
 
 
 # ----------------------- #
@@ -118,7 +121,6 @@ JB :
   archive_path: /blog/archive.html
   categories_path : /blog/categories.html
   tags_path : /blog/tags.html
-  atom_path : /blog/atom.xml
   rss_path : /blog/rss.xml
 
   # Settings for comments helper
