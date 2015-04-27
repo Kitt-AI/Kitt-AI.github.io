@@ -1,20 +1,17 @@
-
 ---
-layout: nil
 title : RSS Feed
 permalink: /blog/rss.xml 
+layout: null
 ---
 
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
         <title>{{ site.title }}</title>
-        <description>{{ site.title }} - {{ site.author.name }}</description>
-        <link>{{ site.production_url }}{{ site.rss_path }}</link>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
         <link>{{ site.production_url }}</link>
-        <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-        <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
-        <ttl>1800</ttl>
+        <atom:link href="{{ site.production_url }}{{ site.JB.rss_path }}" rel="self" type="application/rss+xml" />
+        <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
 
 {% for post in site.posts %}
         <item>
@@ -22,7 +19,7 @@ permalink: /blog/rss.xml
                 <description>{{ post.content | xml_escape }}</description>
                 <link>{{ site.production_url }}{{ post.url }}</link>
                 <guid>{{ site.production_url }}{{ post.id }}</guid>
-                <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         </item>
 {% endfor %}
 
