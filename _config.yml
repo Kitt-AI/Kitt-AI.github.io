@@ -33,7 +33,7 @@ name: 'KITT.AI'
 author: 'Xuchen Yao'
 title: 'KITT.AI | Natural Language Understanding Made Easy'
 description: > 
-    natural language understanding technologies about semantic parsing, question answering from web text and knowledge base, and hotword detection.
+    Natural Language Understanding (NLU) technologies with Semantic Parsing, Question Answering (from web text and Knowledge Base), and Hotword Detection.
 
 
 social:
