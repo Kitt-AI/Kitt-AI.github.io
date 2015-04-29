@@ -268,6 +268,22 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+
+    a.btn-circle {
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+		padding: 7px 0;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		font-size: 20px;
+	}
+
+    a.btn-circle.btn-dark {
+      border: 2px solid #4772B2;
+      color: #4772B2;
+    }
+
 }
 
 .intro-about {
