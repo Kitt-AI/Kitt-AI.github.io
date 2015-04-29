@@ -20,7 +20,7 @@
 #
 # This has a nice "team" layout:
 # https://github.com/y7kim/agency-jekyll-theme
-#
+# https://zapier.com/engineering/
 permalink: /blog/:year/:month/:day/:title 
 
 exclude: ["README.md", "_include/JB", "Gemfile"]
