@@ -32,8 +32,9 @@ production_url: 'http://kitt.ai'
 name: 'KITT.AI'
 author: 'Xuchen Yao'
 title: 'KITT.AI | Natural Language Understanding Made Easy'
+# keep description under 140 charactors so Google displays it all.
 description: > 
-    Natural Language Understanding (NLU) technologies with Semantic Parsing, Question Answering (from web text and Knowledge Base), and Hotword Detection.
+    Natural Language Understanding technologies with Semantic Parsing, Question Answering (from text and Knowledge Base) and Hotword Detection.
 
 
 social:
