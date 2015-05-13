@@ -26,6 +26,7 @@ $ cd USERNAME.github.com
 $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
 $ # Do your edit, then:
 $ bundle exec jekyll serve
+$ git commit -am 'my edit'
 $ git push origin master  
 ```
 
