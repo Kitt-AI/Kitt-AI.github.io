@@ -43,7 +43,7 @@ social:
   # JB/is_production uses it to determine production/development mode
   github: 'https://github.com/Kitt-AI/'
   twitter: 'https://twitter.com/kitt_ai'
-  linkedin: '#'
+  linkedin: 'https://www.linkedin.com/company/kitt-ai'
 
 address: '2157 N Northlake Way, Suite 110<br>
           Seattle, WA 98103'
