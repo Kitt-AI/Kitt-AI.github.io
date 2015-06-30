@@ -148,7 +148,7 @@ There are three layouts:
 2. post (`_layouts/post.html`): used for blog posts
 3. landing (`_layouts/landing.html`): used for your landing front page
 
-## Product page
+## Product Page
 
 Product pages are served at `PRODUCT.your.domain`. However, Github/Jekyll only 
 allows to publish at `your.domain/PRODUCT`. The solution is:
@@ -157,7 +157,7 @@ allows to publish at `your.domain/PRODUCT`. The solution is:
    `USER.github.io/PRODUCT`
 2. build a `gh-pages` branch and push an `index.html` file
 3. push `CNAME` with content: `PRODUCT.your.domain`
-4. set a CNAME record on your domain provider site pointing `PRODUCT.kitt.ai` 
+4. set a CNAME record on your domain provider site pointing `PRODUCT.your.domain` 
    to `USER.github.io` (*note*: **not** `USER.github.io/PRODUCT` with the 
    subdirectory name
  
@@ -175,9 +175,9 @@ holder but serve most content from the main site:
 
 1. on the main site (this repository), build the product page with subdirectory
    file `PRODUCT/index.html`.
-2. it'll server from `your.domain/PRODUCT`
+2. it'll serve from `your.domain/PRODUCT`
 3. on the subdomain repository's `gh-pages` branch 
-   (`https://github.com/USER/PRODUCT`): ``wget your.domain/PRODUCT -O index.html`
+   (`https://github.com/USER/PRODUCT`): `wget your.domain/PRODUCT -O index.html`
 4. fix relative path (e.g., "/assets/..") for resources (js/ico/css etc) to 
    absolute path (e.g., "http://your.domain/assets/..").
   - In this way we are serving *everything except `index.html`* from the main 
