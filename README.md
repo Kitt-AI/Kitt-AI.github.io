@@ -3,8 +3,8 @@
 What a small startup usually needs (and this repository's current dev stage):
 
 - A single responsive landing page (done, e.g.: your.domain)
+- Several product pages (done, e.g., your.domain/product and product.your.domain)
 - A blogging platform (in progress, e.g., your.domain/blog)
-- Several product pages (future, e.g., your.domain/product)
 
 This repository uses:
 
@@ -30,7 +30,7 @@ $ git commit -am 'my edit'
 $ git push origin master  
 ```
 
-*Before* pushing to github, run to make sure your website looks good locally:
+*Before* pushing to github, make sure your website looks good locally:
 
 ```sh
 $ bundle exec jekyll serve
@@ -128,7 +128,7 @@ Directory structures:
 ├── sitemap.xml
 └── tags.html
 ```
-Dev cycle:
+**Dev cycle**:
 
 1. run `jekyll serve`, this watches local file changes, but *not* `_config.yml`
 2. configure your own `_config.yml`
@@ -150,31 +150,46 @@ There are three layouts:
 
 ## Product page
 
-Product pages are served at `PRODUCT`.kitt.ai. However, Github/Jekyll only allows to publish at kitt.ai/`PRODUCT`. The solution is:
+Product pages are served at `PRODUCT.your.domain`. However, Github/Jekyll only 
+allows to publish at `your.domain/PRODUCT`. The solution is:
 
-1. Initiate another reppository called `PRODUCT`
-2. build a `gh-pages` branch and push an `index.html`
-3. push `CNAME` with content: `PRODUCT.kitt.ai`
-4. set a CNAME record on your domain provider site pointing `PRODUCT.kitt.ai` to `USER.github.io` (*note*: **not** `USER.github.io/PRODUCT` with the subdirectory name
+1. Initiate another reppository called `PRODUCT` hosted at 
+   `USER.github.io/PRODUCT`
+2. build a `gh-pages` branch and push an `index.html` file
+3. push `CNAME` with content: `PRODUCT.your.domain`
+4. set a CNAME record on your domain provider site pointing `PRODUCT.kitt.ai` 
+   to `USER.github.io` (*note*: **not** `USER.github.io/PRODUCT` with the 
+   subdirectory name
  
-Above is standard Github procedures, official docs are [here](https://help.github.com/categories/github-pages-basics/).
+Above is standard Github procedures, official docs are 
+[here](https://help.github.com/categories/github-pages-basics/).
 
-Now comes the tricky part: *how to make `PRODUCT.kitt.ai` share the same templates & theme with `kitt.ai` main site?*
+Now comes the tricky part: *how to make `PRODUCT.your.domain` share the same 
+templates & theme with `your.domain` main site?*
 
-Solution One: write a MAKE file to `rsync` both repositories -- very easy to make mistakes!
+Solution One: write a MAKE file to `rsync` both repositories -- very easy to 
+make mistakes!
 
-Better solution: only use the subdomain and its repository as `index.html` holder but server most content from the main site.
+Better solution: only use the subdomain and its repository as `index.html` 
+holder but serve most content from the main site:
 
-1. on the main site (this repository), build the product page with subdirectory file `PRODUCT/index.html`.
-2. it'll server from `kitt.ai/PRODUCT`
-3. on the subdomain repository's `gh-pages` branch (`https://github.com/USER/PRODUCT`): ``wget kitt.ai/PRODUCT -O index.html`
-4. fix relative path (e.g., "/assets/..") for resources (js/ico/css etc) to absolute path (e.g., "http://kitt.ai/assets/..").
-  - In this way we are serving *everything except `index.html`* from the main site, so the themes are shared!
-  - fixing the path is easy, just used `sed -i 's/old/new/g' index.html` in-place replacement
+1. on the main site (this repository), build the product page with subdirectory
+   file `PRODUCT/index.html`.
+2. it'll server from `your.domain/PRODUCT`
+3. on the subdomain repository's `gh-pages` branch 
+   (`https://github.com/USER/PRODUCT`): ``wget your.domain/PRODUCT -O index.html`
+4. fix relative path (e.g., "/assets/..") for resources (js/ico/css etc) to 
+   absolute path (e.g., "http://your.domain/assets/..").
+  - In this way we are serving *everything except `index.html`* from the main 
+    site, so the themes are shared!
+  - fixing the path is easy, just use `sed -i 's/old/new/g' index.html` 
+    in-place replacement
 5. `git commit` and `push` to update
-6. your project is served identically at both `PRODUCT.kitt.ai` and `kitt.ai/PRODUCT`. Don't like the latter one? Simple remove it.
+6. your project is served identically at both `PRODUCT.your.domain` and 
+   `your.domain/PRODUCT`. Don't like the latter one? Simple remove it.
 
-Sample exaple: [tweetbulb.kitt.ai](http://tweetbulb.kitt.ai) ([code](https://github.com/Kitt-AI/tweetbulb)).
+Sample example: [tweetbulb.kitt.ai](http://tweetbulb.kitt.ai) 
+([code](https://github.com/Kitt-AI/tweetbulb)).
 
 ## TODO
 
