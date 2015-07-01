@@ -174,10 +174,10 @@ Better solution: only use the subdomain and its repository as `index.html`
 holder but serve most content from the main site:
 
 1. on the main site (this repository), build the product page with subdirectory
-   file `PRODUCT/index.html`.
-2. it'll serve from `your.domain/PRODUCT`
+   file `PRODUCT0/index.html` (note the 0 following `PRODUCT` here.
+2. it'll serve from `your.domain/PRODUCT0`
 3. on the subdomain repository's `gh-pages` branch 
-   (`https://github.com/USER/PRODUCT`): `wget your.domain/PRODUCT -O index.html`
+   (`https://github.com/USER/PRODUCT`): `wget your.domain/PRODUCT0 -O index.html`
 4. fix relative path (e.g., "/assets/..") for resources (js/ico/css etc) to 
    absolute path (e.g., "http://your.domain/assets/..").
   - In this way we are serving *everything except `index.html`* from the main 
@@ -186,7 +186,14 @@ holder but serve most content from the main site:
     in-place replacement
 5. `git commit` and `push` to update
 6. your project is served identically at both `PRODUCT.your.domain` and 
-   `your.domain/PRODUCT`. Don't like the latter one? Simple remove it.
+   `your.domain/PRODUCT0`. Don't like the latter one? Simple remove it.
+   
+Why do we need to append 0 when serving at `your.domain/PRODUCT0`? Because 
+`your.domain/PRODUCT0` uses relative path and `PRODUCT.your.domain` uses
+absolute path. When one accesses `PRODUCT.your.domain`, Github (or your 
+browser) might get  confused and will serve `your.domain/PRODUCT0` on the
+`PRODUCT.your.domain` domain, then the relative path in `your.domain/PRODUCT0`
+breaks since all the assets cannot be found from `PRODUCT.your.domain`.
 
 Sample example: [tweetbulb.kitt.ai](http://tweetbulb.kitt.ai) 
 ([code](https://github.com/Kitt-AI/tweetbulb)).
