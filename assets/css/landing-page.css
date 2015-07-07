@@ -27,7 +27,8 @@ h6 {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-    color: #f8f8f8;
+    outline: 0;
+    background-color: rgba(0,0,0,.2);
 }
 
 .navbar-custom ul.nav li a {
@@ -51,7 +52,7 @@ h6 {
 
 .navbar-custom ul.nav ul.dropdown-menu {
     border-radius: 0;	
-	background: transparent;
+	/*background: transparent;*/
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li {
@@ -72,7 +73,9 @@ h6 {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	background: transparent;
+	/* background: transparent; */
+    outline: 0;
+    background-color: rgba(0,0,0,.2);
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
@@ -109,6 +112,21 @@ h6 {
     color: #f8f8f8;
     background: /* linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),*/
                 url(../img/blue-on-sky-gray.png) no-repeat center;
+    background-size: cover;
+    background-color: #f7f7f7;
+}
+
+
+.tweetbulb-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: /* linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), */
+                url(../img/tweetbulb/tweetbulb-cover.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-color: #f7f7f7;
 }
