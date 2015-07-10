@@ -523,40 +523,40 @@ hr1 {
 	transform: scale(1.1) rotate(360deg);
 }
  
- .fa-adn{background-color:#504e54;} 
- .fa-apple{background-color:#aeb5c5;} 
- .fa-android{background-color:#A5C63B;}  
- .fa-bitbucket, .fa-bitbucket-square{background-color:#003366;} 
- .fa-bitcoin, .fa-btc{background-color:#F7931A;} 
- .fa-css3{background-color:#1572B7;} 
- .fa-dribbble{background-color:#F46899;}  
- .fa-dropbox{background-color:#018BD3;}
- .fa-facebook, .fa-facebook-square{background-color:#3C599F;}  
- .fa-flickr{background-color:#FF0084;}
- .fa-foursquare{background-color:#0086BE;}
- .fa-github, .fa-github-alt, .fa-github-square{background-color:#070709;} 
- .fa-google-plus, .fa-google-plus-square{background-color:#CF3D2E;} 
- .fa-html5{background-color:#E54D26;}
- .fa-instagram{background-color:#A1755C;}
- .fa-linkedin, .fa-linkedin-square{background-color:#0085AE;} 
- .fa-linux{background-color:#FBC002;color:#333;}
- .fa-maxcdn{background-color:#F6AE1C;}
- .fa-pagelines{background-color:#241E20;color:#3984EA;}
- .fa-pinterest, .fa-pinterest-square{background-color:#CC2127;} 
- .fa-renren{background-color:#025DAC;}
- .fa-skype{background-color:#01AEF2;}
- .fa-stack-exchange{background-color:#245590;}
- .fa-stack-overflow{background-color:#FF7300;}
- .fa-trello{background-color:#265A7F;}
- .fa-tumblr, .fa-tumblr-square{background-color:#314E6C;} 
- .fa-twitter, .fa-twitter-square{background-color:#32CCFE;} 
- .fa-vimeo-square{background-color:#229ACC;}
- .fa-vk{background-color:#375474;}
- .fa-weibo{background-color:#D72B2B;}
- .fa-windows{background-color:#12B6F3;}
- .fa-xing, .fa-xing-square{background-color:#00555C;} 
- .fa-youtube, .fa-youtube-play, .fa-youtube-square{background-color:#C52F30;}
- /*.fa-envelope, .fa-envelope-o, .fa-envelope-square{background-color:#314E6C;}*/
+.with-bg .fa-adn{background-color:#504e54;}
+.with-bg .fa-apple{background-color:#aeb5c5;}
+.with-bg .fa-android{background-color:#A5C63B;}
+.with-bg .fa-bitbucket, .fa-bitbucket-square{background-color:#003366;}
+.with-bg .fa-bitcoin, .fa-btc{background-color:#F7931A;}
+.with-bg .fa-css3{background-color:#1572B7;}
+.with-bg .fa-dribbble{background-color:#F46899;}
+.with-bg .fa-dropbox{background-color:#018BD3;}
+.with-bg .fa-facebook, .fa-facebook-square{background-color:#3C599F;}
+.with-bg .fa-flickr{background-color:#FF0084;}
+.with-bg .fa-foursquare{background-color:#0086BE;}
+.with-bg .fa-github, .fa-github-alt, .fa-github-square{background-color:#070709;}
+.with-bg .fa-google-plus, .fa-google-plus-square{background-color:#CF3D2E;}
+.with-bg .fa-html5{background-color:#E54D26;}
+.with-bg .fa-instagram{background-color:#A1755C;}
+.with-bg .fa-linkedin, .fa-linkedin-square{background-color:#0085AE;}
+.with-bg .fa-linux{background-color:#FBC002;color:#333;}
+.with-bg .fa-maxcdn{background-color:#F6AE1C;}
+.with-bg .fa-pagelines{background-color:#241E20;color:#3984EA;}
+.with-bg .fa-pinterest, .fa-pinterest-square{background-color:#CC2127;}
+.with-bg .fa-renren{background-color:#025DAC;}
+.with-bg .fa-skype{background-color:#01AEF2;}
+.with-bg .fa-stack-exchange{background-color:#245590;}
+.with-bg .fa-stack-overflow{background-color:#FF7300;}
+.with-bg .fa-trello{background-color:#265A7F;}
+.with-bg .fa-tumblr, .fa-tumblr-square{background-color:#314E6C;}
+.with-bg .fa-twitter, .fa-twitter-square{background-color:#32CCFE;}
+.with-bg .fa-vimeo-square{background-color:#229ACC;}
+.with-bg .fa-vk{background-color:#375474;}
+.with-bg .fa-weibo{background-color:#D72B2B;}
+.with-bg .fa-windows{background-color:#12B6F3;}
+.with-bg .fa-xing, .fa-xing-square{background-color:#00555C;}
+.with-bg .fa-youtube, .fa-youtube-play, .fa-youtube-square{background-color:#C52F30;}
+.with-bg .fa-envelope, .with-bg .fa-envelope-o, .fa-envelope-square{background-color:#314E6C;}
 
 
 .post-preview > a {
