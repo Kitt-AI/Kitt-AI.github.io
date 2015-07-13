@@ -63,155 +63,164 @@ header: TweetBulb
 <section id="tweetbulb-social">
 <div class="intro-about">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="text-primary"><i class="fa fa-arrow-circle-right"></i>
-                    Step 1/2: Control TweetBulb with a Message<br>
-                    <small>using Facebook, e-mail or Twitter</small></h2>
-            </div>
-        </div>
-        <br/> <br/>
 
-        <div class="row">
-
-            <!-- Facebook -->
-            <div class="col-lg-5 col-sm-5 text-center">
-
-                <!-- Page Plugin -->
-                <div class="fb-page" data-href="https://www.facebook.com/tweetbulb" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tweetbulb"><a href="https://www.facebook.com/tweetbulb">TweetBulb</a></blockquote></div></div>
-                <br><br>
-
-                <!-- like button of http://tweetbulb.kitt.ai -->
-                <div class="center-block">
-                    <div class="fb-like" data-href="http://tweetbulb.kitt.ai" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-2 col-sm-2 text-left text-muted">
-                <!--
-                <h4 class="text-warning">Not feeling social?</h4>
-                <br>
-                <p class="text-info">Write an <i class="fa fa-envelope-o fa"></i> to <a href="mailto:tweetbulb@kitt.ai">tweetbulb@kitt.ai</a>
-                with your command in the <span class="text-danger">subject</span>.</p>
-                <p><small>Any message in the body will be <i>ignored</i>.</small></p>
-                -->
-
-                <div class="panel panel-success">
-                    <div class="panel-heading">Not feeling social?</div>
-                    <div class="panel-body">
-                        <p class="text-info">Write an <i class="fa fa-envelope-o fa"></i> to <a href="mailto:tweetbulb@kitt.ai">tweetbulb@kitt.ai</a>
-                            with your command in the <span class="text-danger">subject</span>.</p>
-                    </div>
-                    <div class="panel-footer">
-                        <p><small>Any message in the body will be <i>ignored</i>.</small></p>
-                    </div>
-
-                </div>
-
-                <div class="text-center">
-                    <a href="#tweetbulb-youtube-embed" class="btn btn-circle btn-dark page-scroll" role="button">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                    <br>
-                    <h5><i class="fa fa-arrow-circle-right"></i>
-                    Step 2/2:  Watch on YouTube</h5>
-                </div>
-            </div>
-
-            <div class="col-lg-5 col-sm-5">
-
-                <!-- doc: https://dev.twitter.com/web/embedded-timelines#customization  -->
-                <a class="twitter-timeline" height="400" width="350" href="https://twitter.com/hashtag/TweetBulb" data-widget-id="614507241064935424">#TweetBulb Tweets</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                <br><br>
-
-                <!-- Share a link -->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-text="Tweet to control @kitt_ai's smart lightbulbs!" data-via="kitt_ai">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-                <!-- Follow @kitt_ai -->
-                <a href="https://twitter.com/kitt_ai" class="twitter-follow-button" data-show-count="false">Follow @kitt_ai</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-                <!-- Tweet #TweetBulb -->
-                <a href="https://twitter.com/intent/tweet?button_hashtag=TweetBulb" class="twitter-hashtag-button" data-related="kitt_ai">Tweet #TweetBulb</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-
-            </div>
-
+        <div class="col-md-12 text-center">
+            <h2 class="text-primary"><i class="fa fa-arrow-circle-right"></i>
+                Step 1/2: TweetBulb Understands Natural Language Commands<br>
+                <small>from Twitter, Facebook, or e-mail</small></h2>
         </div>
 
 
-        <br>
-        <br>
         <div class="row">
-            <div class="col-md-12 text-center">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lightbulbintro" aria-expanded="false" aria-controls="collapseExample">
-                    Light bulbs Intro
-                </button>
-                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#samplecommands" aria-expanded="false" aria-controls="collapseExample">
-                    Do Something Simple
-                </button>
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#advancedusage" aria-expanded="false" aria-controls="collapseExample">
-                    Teach Me Something Magical
-                </button>
-                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#threelaws" aria-expanded="false" aria-controls="collapseExample">
-                    Three Laws of Smart Light Bulbs
-                </button>
-                <div class="collapse" id="lightbulbintro">
-                    <div class="well text-left">
-                         <h4 class="text-primary">Names of our light bulbs:
-                             <i class="fa fa-lightbulb-o fa-2x" style="color: red"></i> <span class="text-primary"><b>left</b></span>
-                             <i class="fa fa-lightbulb-o fa-2x" style="color: blue"></i> <span class="text-primary"><b>middle</b></span>
-                             <i class="fa fa-lightbulb-o fa-2x" style="color: orange"></i> <span class="text-primary"><b>right</b></span>
+
+            <div class="col-lg-5 col-md-5 col-sm-5 text-center">
+                <div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#twitter" aria-controls="twitter" role="tab" data-toggle="tab">Twitter</a></li>
+                    <li role="presentation"><a href="#facebook" aria-controls="facebook" role="tab" data-toggle="tab">Facebook</a></li>
+                    <li role="presentation"><a href="#email" aria-controls="email" role="tab" data-toggle="tab">Email</a></li>
+                  </ul>
+
+                   <!-- Tab panes -->
+
+                   <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="twitter">
+
+                        <br><br>
+                        <!-- doc: https://dev.twitter.com/web/embedded-timelines#customization  -->
+                        <a class="twitter-timeline" height="400" width="350" href="https://twitter.com/hashtag/TweetBulb" data-widget-id="614507241064935424">#TweetBulb Tweets</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <br><br>
+
+                        <!-- Share a link -->
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Tweet to control @kitt_ai's smart lightbulbs!" data-via="kitt_ai">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                        <!-- Follow @kitt_ai -->
+                        <a href="https://twitter.com/kitt_ai" class="twitter-follow-button" data-show-count="false">Follow @kitt_ai</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                        <!-- Tweet #TweetBulb -->
+                        <a href="https://twitter.com/intent/tweet?button_hashtag=TweetBulb" class="twitter-hashtag-button" data-related="kitt_ai">Tweet #TweetBulb</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="facebook">
+
+                        <br><br>
+                        <!-- Page Plugin -->
+                        <div class="fb-page" data-href="https://www.facebook.com/tweetbulb" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tweetbulb"><a href="https://www.facebook.com/tweetbulb">TweetBulb</a></blockquote></div></div>
+                        <br><br>
+
+                        <!-- like button of http://tweetbulb.kitt.ai -->
+                        <div class="center-block">
+                            <div class="fb-like" data-href="http://tweetbulb.kitt.ai" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="email">
+                        <br><br>
+                         <div class="panel panel-success">
+                            <div class="panel-heading"><h4>Not feeling social?</h4></div>
+                            <div class="panel-body">
+                                <h4 class="text-info">Write an <i class="fa fa-envelope-o fa"></i> to <a href="mailto:tweetbulb@kitt.ai">tweetbulb@kitt.ai</a>
+                                    <br>
+                                    with your command in the <span class="text-danger">subject</span>.</h4>
+                            </div>
+                            <div class="panel-footer">
+                                <p>Any message in the body will be <i>ignored</i>.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-7 col-sm-7 text-center">
+                                <div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#samplecmd" aria-controls="samplecmd" role="tab" data-toggle="tab">Sample Commands</a></li>
+                    <li role="presentation"><a href="#teachme" aria-controls="teachme" role="tab" data-toggle="tab">Advanced Usage</a></li>
+                      <li role="presentation"><a href="#threerules" aria-controls="threerules" role="tab" data-toggle="tab">3 Laws of Smart Bulbs</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade" id="bulbintro">
+
+                        <br><br>
+                        <div class="well text-left">
+
+                             <h4 class="text-primary">They can:</h4>
+                             <br>
+                             <div class="text-left text-muted">
+                                 <ul>
+                                     <li>turn on/off, dim, and blink</li>
+                                     <li>display 16 million different colors each</li>
+                                     <li>understand common colors of half a million things</li>
+                                 </ul>
+                             </div>
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade in active" id="samplecmd">
+                        <br><br>
+                        <div class="well text-left">
+                        <h4 class="text-primary">Names of our light bulbs:
+                            <i class="fa fa-lightbulb-o fa-2x" style="color: red"></i> <span class="text-primary"><b>left</b></span>
+                            <i class="fa fa-lightbulb-o fa-2x" style="color: blue"></i> <span class="text-primary"><b>middle</b></span>
+                            <i class="fa fa-lightbulb-o fa-2x" style="color: orange"></i> <span class="text-primary"><b>right</b></span>
                         </h4>
-                         <br>
 
-                         <h4 class="text-primary">They can:</h4>
-                         <br>
-                         <div class="text-left text-muted">
-                             <ul>
-                                 <li>turn on/off, and blink</li>
-                                 <li>display 16 million different colors each</li>
-                                 <li>understand common colors of half a million things</li>
-                             </ul>
-                         </div>
-
-                    </div>
-                </div>
-                 <div class="collapse" id="samplecommands">
-                    <div class="well text-left">
-                         <h4 class="text-primary">Something you can do:</h4>
+                          <h4 class="text-muted">Something you can do:</h4>
                          <br>
                          <div class="text-left">
                              <ul>
-                                 <li><span class="text-info">change <span class="text-primary">left</span> light to
-                                     <span style="color: red">red</span> and <span class="text-primary">middle</span> light to
-                                     <span style="color: purple">purple</span> and <span class="text-primary">right</span> light to
-                                     <span style="color: blue">bluish</span>
-                                 </span></li>
-                                 <li class="text-info">Blink all lights <span class="text-warning">five</span> times in <span style="color: red">red</span></li>
-                                 <li class="text-info">Give me a romantic theme!</li>
-                                 <li class="text-info">Go Seattle Seahawks!
-                                     <small>(<span class="text-danger">Go ***</span> is a special trigger to
-                                         flash all lights with the color of ***)</small></li>
+                                 <li><h5><span class="text-primary">Change <span class="text-danger">left</span> light to
+                                     <span style="color: red">red</span> and <span class="text-danger">middle</span> light to
+                                     <span style="color: purple">purple</span> and <span class="text-danger">right</span> light to
+                                     <span style="color: blue">bluish</span></span></h5>
+                                     <ul>
+                                         <li class="text-muted">Each light bulb can display 16 million different colors</li>
+                                     </ul>
+                                 </li>
+                                 <li class="text-primary"><h5>Blink all lights <span class="text-warning">five</span> times in <span style="color: red">red</span></h5>
+                                     <ul>
+                                         <li class="text-muted">Each light bulb can turn on/off, dim, and blink</li>
+                                         <li class="text-muted">Feel free to change their saturation, hue, and brightness</li>
+                                     </ul>
+                                 </li>
+                                 <li class="text-primary"><h5>Give me a <span style="color: red">romantic</span> theme!</h5>
+                                     <ul>
+                                         <li class="text-muted">TweetBulb understands human intent!</li>
+                                     </ul>
+                                 </li>
+                                 <li class="text-primary"><h5>Go <span style="color: red">Seattle Seahawks</span>!</h5>
+                                     <ul>
+                                         <li class="text-muted">
+                                             <span class="text-danger">Go [object]</span> is a special trigger to
+                                             flash all lights with the color of <span class="text-danger">[object]</span>
+                                         </li>
+                                         <li class="text-muted">TweetBulb understands common colors of half a million things.</li>
+                                     </ul>
+                                 </li>
                              </ul>
                          </div>
+                        </div>
 
-                         <br>
                     </div>
-                </div>
-                <div class="collapse" id="advancedusage">
-                    <div class="well text-left">
-                        <p class="text-muted">You can teach TweetBulb to do stuff you want! Use the following magic phrases:</p>
+                    <div role="tabpanel" class="tab-pane fade" id="teachme">
+                        <br><br>
+                     <div class="well text-left">
+                        <p class="text-muted">You can teach TweetBulb! Use the following magic phrases:</p>
                         <h4 class="text-primary text-center">When I say
                             <span class="text-danger"><i>[something magical]</i></span> please
                             <span class="text-info"><i>[do something specific]</i></span></h4>
 
                         <br>
-                        <p class="text-muted">for instance (in Twetter/Facebook/Email):</p>
+                        <p class="text-muted">for instance:</p>
                           <div class="text-left">
                                  <p class="text-primary text-center">When I say
                                      <span class="text-danger"><i>Garfield</i></span> please
@@ -227,9 +236,12 @@ header: TweetBulb
                          </div>
 
                     </div>
-                </div>
-                <div class="collapse" id="threelaws">
-                    <div class="well text-left text-muted">
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="threerules">
+                        <br><br>
+                     <div class="well text-left text-muted">
                         <h4>Three Laws of Smart Light Bulbs (Rules of Engagement)</h4>
                             <ol>
                             <li><span class="text-success">A light bulb may not injure a human being or, through
@@ -248,7 +260,7 @@ header: TweetBulb
                                     <li>
                                         <span class="text-primary">When such orders are given by multiple human beings,
                                         to resolve conflict, a light bulb maintains a <span class="text-danger">queue</span>
-                                        to execute these orders one by one (thus an order can be significantly delayed
+                                        to execute these orders one by one (thus a command can be significantly delayed
                                         during high traffic).</span>
                                     </li>
                                 </ul>
@@ -257,8 +269,8 @@ header: TweetBulb
                                 such protection does not conflict with the First or
                                 Second Laws.</span>
                                 <ul>
-                                    <li><span class="text-primary">Each order gets <span class="text-danger">5 seconds</span> to run.
-                                        It's OK to tweet "flash all lights <span class="text-danger">5 million</span> times and <span class="text-danger">burn</span>!".
+                                    <li><span class="text-primary">Each command gets <span class="text-danger">5 seconds</span> to run.
+                                        It's OK to tweet "<i>flash all lights <span class="text-danger">5 million</span> times and <span class="text-danger">burn</span>!</i>".
                                         But TweetBulb only runs the command for 5 seconds for self protection.</span>
                                     </li>
                                 </ul>
@@ -266,9 +278,25 @@ header: TweetBulb
                             </li>
                         </ol>
                     </div>
+                    </div>
+                  </div>
+
                 </div>
+
             </div>
+
+
         </div>
+
+        <div class="text-center">
+            <a href="#tweetbulb-youtube-embed" class="btn btn-circle btn-dark page-scroll" role="button">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+            <br>
+            <h5><i class="fa fa-arrow-circle-right"></i>
+            Step 2/2:  Watch on YouTube</h5>
+        </div>
+
 
     </div>
 </div>
@@ -342,7 +370,7 @@ header: TweetBulb
         </div>
 
         <br/> <br/>
-        <h4 class="text-center text-info">Questions? Drop us an <a href="mailto:info@kitt.ai">email</a>!</h4>
+        <h4 class="text-center text-info">Interested in integration? Drop us an <a href="mailto:info@kitt.ai">email</a>!</h4>
         <br/> <br/>
 
 
