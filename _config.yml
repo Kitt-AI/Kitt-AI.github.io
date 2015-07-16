@@ -31,7 +31,8 @@ production_url: 'http://kitt.ai'
 # For Search Engine Optimization
 name: 'KITT.AI'
 author: 'Xuchen Yao'
-title: 'KITT.AI | Natural Language Understanding Made Easy'
+title: 'KITT.AI'
+long_title: 'KITT.AI | Natural Language Understanding Made Easy'
 # keep description under 140 charactors so Google displays it all.
 description: > 
     Natural Language Understanding technologies with Semantic Parsing, Question Answering (from text and Knowledge Base) and Hotword Detection.
