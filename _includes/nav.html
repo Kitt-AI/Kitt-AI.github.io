@@ -17,17 +17,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">  
-              <li class="active"><a href="/#home">Home</a></li>
+              <li class="active"><a href="{{ site.url }}/#home">Home</a></li>
             	<li>
-                    <a class="page-scroll" href="/#about">Technologies</a>
+                    <a class="page-scroll" href="{{ site.url }}/#about">Technologies</a>
                 </li>            
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle page-scroll"
+                    <a href="{{ site.url }}/#products" class="dropdown-toggle page-scroll"
                        data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Products<span class="caret"></span></a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="/#products">Overview</a></li>
+                        <li><a href="{{ site.url }}/#products">Overview</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="http://parsetron.kitt.ai">Parsetron</a></li>
                         <li><a href="http://tweetbulb.kitt.ai">TweetBulb</a></li>
