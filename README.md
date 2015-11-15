@@ -153,7 +153,7 @@ There are three layouts:
 Product pages are served at `PRODUCT.your.domain`. However, Github/Jekyll only 
 allows to publish at `your.domain/PRODUCT`. The solution is:
 
-1. Initiate another reppository called `PRODUCT` hosted at 
+1. Initiate another repository called `PRODUCT` hosted at 
    `USER.github.io/PRODUCT`
 2. build a `gh-pages` branch and push an `index.html` file
 3. push `CNAME` with content: `PRODUCT.your.domain`
