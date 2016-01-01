@@ -200,6 +200,42 @@ h6 {
 }
 
 
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+    min-height:150px; height:200px;
+}
+
+.team-member:hover > img {
+    border: 4px solid #6cb2c6;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+
+.backed-by {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.backed-by img {
+    margin: 0 auto;
+    max-width:300px; width:300px;
+}
+
 .btn {
   border-radius: 10px;
   /* text-transform: uppercase; */
