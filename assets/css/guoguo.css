@@ -1,0 +1,340 @@
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #666;
+  background-color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 30px;
+  /*text-transform: uppercase;*/
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+p.lead {
+  font-weight: 600;
+}
+
+a {
+  color: #28c3ab;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #176e61;
+}
+
+.light {
+  font-weight: 400;
+}
+
+
+
+/* misc */
+hr {
+  margin-top: 10px;
+}
+
+/* margins */
+.marginbot-0{margin-bottom:0 !important;}
+.marginbot-10{margin-bottom:10px !important;}
+.marginbot-20{margin-bottom:20px !important;}
+.marginbot-30{margin-bottom:30px !important;}
+.marginbot-40{margin-bottom:40px !important;}
+.marginbot-50{margin-bottom:50px !important;}
+
+/* ===========================
+--- General sections
+============================ */
+
+#header {
+  background-color: #1f1815;
+  background-attachment: fixed;
+  background-image: url("../img/guoguo/Guoguo_2012.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  left: 0;
+  padding: 8em 4em 0 0;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 33.4%;
+}
+
+#div-background-image {
+  height: 500px;
+  overflow: hidden;
+}
+
+#img.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display:block;
+  position:relative;
+  z-index:120;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.section-heading i {
+  margin-bottom: 10px;
+}
+
+
+/* --- section bg var --- */
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-gray {
+  /* background: #f8f8f8; */
+  background: #f8f8f8;
+}
+
+.bg-blue {
+  background: #4FC1E9;
+}
+
+
+.bg-dark {
+  background: #575757;
+}
+
+/* --- section color var --- */
+
+.text-light {
+  color: #fff;
+}
+
+
+.kitt {
+  color: white;
+}
+
+
+.kitt:hover,
+.kitt:focus {
+  text-decoration: none;
+  color: #4772B2;
+}
+
+.events-object {
+  min-height:30px; height:40px;
+}
+
+.publication .venue {
+  font-style: italic;
+}
+
+.publication .title {
+  font-weight: bold;
+}
+
+.brand-heading {
+  font-size: 40px;
+}
+
+.popover{
+  max-width: 100%; // Max Width of the popover (depending on the container!)
+}
+
+
+/* ===========================
+--- About
+============================ */
+
+.boxed-grey {
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.team h5 {
+  margin-bottom: 10px;
+}
+
+.team p.subtitle {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+.profile {
+  margin-bottom: 20px;
+  height: 60px;
+  width: 50px;
+}
+
+
+/* ===========================
+--- Services
+============================ */
+
+.left-aligned {
+  text-align: left;
+}
+
+
+
+/* Extra Small Devices, .visible-xs-* */
+@media (max-width: 767px) {
+  .section-heading h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+
+  .kitt {
+    color: white;
+  }
+
+  .kitt:hover,
+  .kitt:focus {
+    text-decoration: none;
+    color: #4772B2;
+  }
+
+  .item{
+    background: #333;    
+    text-align: center;
+    max-height: 280px !important;
+    height: 280px;
+  }
+
+  .item.item-narrow{
+    background: #333;    
+    text-align: center;
+    max-height: 220px !important;
+    height: 220px;
+  }
+
+}
+
+/* Small Devices, .visible-sm-* */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-heading h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .item{
+    background: #333;    
+    text-align: center;
+    max-height: 330px !important;
+    height: 330px;
+  }
+
+  .item.item-narrow{
+    background: #333;    
+    text-align: center;
+    max-height: 280px !important;
+    height: 280px;
+  }
+
+  .kitt {
+    color: white;
+  }
+
+  .kitt:hover,
+  .kitt:focus {
+    text-decoration: none;
+    color: #4772B2;
+  }
+
+}
+
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-heading h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .item{
+    background: #333;    
+    text-align: center;
+    max-height: 330px !important;
+    height: 330px;
+  }
+
+  .item.item-narrow{
+    background: #333;    
+    text-align: center;
+    max-height: 220px !important;
+    height: 220px;
+  }
+
+}
+
+/* Large Devices, .visible-lg-* */
+@media (min-width: 1200px) {
+}
+
+
+
+/*
+pick your color:
+http://www.w3schools.com/tags/ref_colorpicker.asp
+
+ */
+a,.tp-caption a.btn:hover {
+  color: #4772B2;
+}
+
+
+.bg-skin {
+  background: #4772B2;
+}
+
+
+.btn-skin {
+  color: #fff;
+  background-color: #4772B2;
+  border-color: #4772B2;
+}
