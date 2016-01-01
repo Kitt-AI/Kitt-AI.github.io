@@ -45,8 +45,10 @@
     <!-- Header -->
     <div class="row">
       <div class="col-md-4">
-        <header id="header">
-        </header>
+        <header id="header" class="background-image"></header>
+        <div class="background-image">
+          <img class="background-image" src="/assets/img/guoguo/Guoguo_2012.jpg">
+        </div>
       </div>
 
       <div class="col-md-8">
@@ -83,7 +85,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-8">
                     <div class="container-fluid">
                       <div class="pull-left">
                         <li align="justify"><span class="text-success">Speech Recognition</span></li>
@@ -103,7 +105,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-8">
                     <div class="container-fluid">
                       <div class="pull-left">
                         <a href="//http://kaldi-asr.org/" target="_blank">
@@ -239,7 +241,7 @@
                   </div>
                   <div class="col-md-4">
                     <div class="container-fluid">
-                      <p align="justify">at <span class="text-success">Google Speech</span>, developed user specific hotword detection algorithms with Carolina Parada, Tara Sainath and Rohit Prabhavalkar.</p>
+                      <p align="justify">at <span class="text-success">Google Speech</span>, developed user specific hotword detection algorithms with <a href="http://research.google.com/pubs/CarolinaParada.html">Dr. Carolina Parada</a>, <a href="http://research.google.com/pubs/TaraSainath.html">Dr. Tara Sainath</a> and <a href="http://research.google.com/pubs/RohitPrabhavalkar.html">Dr. Rohit Prabhavalkar</a>.</p>
                     </div>
                   </div>
                 </div>
@@ -265,7 +267,7 @@
                   </div>
                   <div class="col-md-4">
                     <div class="container-fluid">
-                      <p align="justify">at <span class="text-success">Google Speech</span>, developed the prototype of Google's "okay google" hotword detection system with Carolina Parada, Georg Heigold and Alex Gruenstein.</p>
+                      <p align="justify">at <span class="text-success">Google Speech</span>, developed the prototype of Google's "okay google" hotword detection system with <a href="http://research.google.com/pubs/CarolinaParada.html">Dr. Carolina Parada</a>, <a href="http://research.google.com/pubs/GeorgHeigold.html">Dr. Georg Heigold</a> and <a href="http://research.google.com/pubs/author39407.html">Dr. Alex Gruenstein</a>.</p>
                     </div>
                   </div>
                 </div>
@@ -519,26 +521,51 @@
   <script src="https://bootflat.github.io/bootflat/js/jquery.fs.stepper.min.js"></script>
 
   <!-- Background image -->
-  <!--
   <script type="text/javascript">
     $(document).ready(function() {
-      var $maxheight = 500;
+      var $maxwidth = 992;
+      var $minoffsetwidth = 500;
       var $winwidth = $(window).width();
-      $("img.background-image").attr({width: $winwidth});
-      var $imageheight = $("img.background-image").height();
-      $imageheight = $imageheight > $maxheight ? $maxheight : $imageheight;
-      $("#div-background-image").css("height", $imageheight);
+      if ($winwidth >= $maxwidth) {
+        $("#header").css("width", "33.4%");
+        $("#header").css("height", "100%");
+        $("img.background-image").attr({width: 0});
+        $("div.background-image").css("height", 0);
+        $("div.background-image").css("margin-top", 0);
+      } else {
+        $("#header").css("width", "0");
+        $("#header").css("height", "0");
+        $("img.background-image").attr({width: $winwidth});
+        var $offset =
+          230 * ($winwidth - $minoffsetwidth) / ($maxwidth - $minoffsetwidth);
+        $offset = ($offset > 0) ? $offset : 0;
+        $("div.background-image").css("height", 500 + $offset);
+        $("div.background-image").css("margin-top", - $offset);
+      }
       $(window).bind("resize", function() {
         var $winwidth = $(window).width();
-        $("img.background-image").attr({width: $winwidth});
-        var $imageheight = $("img.background-image").height();
-        $imageheight = $imageheight > $maxheight ? $maxheight : $imageheight;
-        $("#div-background-image").css("height", $imageheight);
+        if ($winwidth >= $maxwidth) {
+          $("#header").css("width", "33.4%");
+          $("#header").css("height", "100%");
+          $("img.background-image").attr({width: 0});
+          $("div.background-image").css("height", 0);
+          $("div.background-image").css("margin-top", 0);
+        } else {
+          $("#header").css("width", "0");
+          $("#header").css("height", "0");
+          $("img.background-image").attr({width: $winwidth});
+          var $offset =
+            230 * ($winwidth - $minoffsetwidth) / ($maxwidth - $minoffsetwidth);
+          $offset = ($offset > 0) ? $offset : 0;
+          $("div.background-image").css("height", 500 + $offset);
+          $("div.background-image").css("margin-top", - $offset);
+        }
       })
-    })
+    });
   </script>
 
   <!-- Profile picture -->
+  <!--
   <script type="text/javascript">
     $(document).ready(function() {
       var $maxwidth = 256;
@@ -560,9 +587,19 @@
         $("#div-profile-picture").css("height", $picwidth);
         $("#div-profile-picture").offset({top: $topoffset});
       })
-    })
+    });
   </script>
   -->
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-71909511-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
   <!-- Email -->
   <script type="text/javascript">
