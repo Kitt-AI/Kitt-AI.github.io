@@ -225,6 +225,17 @@ h6 {
     margin-top: 0;
 }
 
+
+.backed-by {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.backed-by img {
+    margin: 0 auto;
+    max-width:300px; width:300px;
+}
+
 .btn {
   border-radius: 10px;
   /* text-transform: uppercase; */
