@@ -233,6 +233,11 @@ hr {
   width: 50px;
 }
 
+.shadowbox {
+    border:5px solid white;
+}
+
+
 
 /* ===========================
 --- Services
