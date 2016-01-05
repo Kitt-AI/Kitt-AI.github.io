@@ -79,9 +79,9 @@ hr {
 --- General sections
 ============================ */
 
-#header {
-  background-color: #1f1815;
-  background-attachment: fixed;
+#header.background-image {
+  background-color: #f8f8f8;
+  /*background-attachment: fixed;*/
   background-image: url("../img/guoguo/Guoguo_2012.jpg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -89,22 +89,25 @@ hr {
   color: rgba(255, 255, 255, 0.5);
   height: 100%;
   left: 0;
-  padding: 8em 4em 0 0;
+  padding: 0 0 0 0;
   position: fixed;
   text-align: right;
   top: 0;
   width: 33.4%;
 }
 
-#div-background-image {
-  height: 500px;
+#div.background-image {
+  margin-top: 0px;
+  height: 0px;
   overflow: hidden;
 }
 
 #img.background-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 500px;
 }
 
 .home-section {
