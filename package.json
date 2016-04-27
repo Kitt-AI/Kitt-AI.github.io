@@ -1,0 +1,44 @@
+{
+  "name": "kitt.ai",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2",
+    "swiper": "^3.3.1",
+    "tether": "^1.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^5.4.2",
+    "babel-eslint": "^6.0.0",
+    "babel-loader": "^5.0.0",
+    "babel-polyfill": "^6.7.4",
+    "cross-env": "^1.0.7",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.14.0",
+    "json-loader": "^0.5.4",
+    "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.9.5",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "start": "npm run hot",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "prebuild": "rimraf ./dist/**/*",
+    "build": "cross-env NODE_ENV=production webpack",
+    "lint": "eslint ./src/**/*.js"
+  }
+}

@@ -1,0 +1,30 @@
+/* Set a rem font size with pixel fallback */
+@function calculateRem($size) {
+  $remSize: $size / $font-size-root;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin link-variant($color, $hover-color: false, $hover-decoration: false) {
+  color: $color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+
+    @if $hover-decoration {
+      text-decoration: underline;
+    }
+
+    @if $hover-color {
+      color: $hover-color;
+    } @else {
+      color: darken($color, 10%);
+    }
+
+  }
+
+}
