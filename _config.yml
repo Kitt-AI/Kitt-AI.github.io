@@ -1,0 +1,176 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+#
+# ideas for blogs:
+# http://jekyllthemes.org/
+# http://hmfaysal.github.io/Notepad/
+# https://github.com/yulijia/freshman21
+# http://scotte.github.io/jekyll-clean/2014/08/jekyll-clean-theme/
+# https://github.com/mmistakes/hpstr-jekyll-theme
+#
+# my favourites:
+# https://mmistakes.github.io/so-simple-theme
+# https://github.com/kippt/jekyll-incorporated --> doesn't compile unfortunately
+# http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/
+#
+# styles:
+# https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll
+# https://github.com/dirkfabisch/mediator
+#
+# This has a nice "team" layout:
+# https://github.com/y7kim/agency-jekyll-theme
+# https://zapier.com/engineering/
+permalink: /blog/:year/:month/:day/:title
+
+exclude: ["README.md", "_include/JB", "Gemfile"]
+
+url: 'http://kitt.ai'
+production_url: 'http://kitt.ai'
+
+# For Search Engine Optimization
+name: 'KITT.AI'
+author: 'Xuchen Yao'
+title: 'KITT.AI'
+long_title: 'KITT.AI | Natural Language Understanding Made Easy'
+# keep description under 140 charactors so Google displays it all.
+description: >
+    Natural Language Understanding technologies with Semantic Parsing, Question Answering (from text and Knowledge Base) and Hotword Detection.
+social:
+  email: 'kittdotai@gmail.com'
+  # we shouldn't define site.github since this is meta data exposed by github puages
+  # JB/is_production uses it to determine production/development mode
+  github: 'https://github.com/Kitt-AI/'
+  twitter: 'https://twitter.com/kitt_ai'
+  linkedin: 'https://www.linkedin.com/company/kitt-ai'
+
+address: '2157 N Northlake Way, Suite 110<br> Seattle, WA 98103'
+
+timezone: 'America/Los_Angeles'
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+paginate: 2
+paginate_path: "/blog/page:num/"
+
+gems:
+  - jekyll-sitemap
+
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+#
+google_contact_form: <iframe src="https://docs.google.com/forms/d/1b5cptc5141WkS0tOnvgapIwUYNpsrmywN9s9Ab1Va7Q/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+# social:
+#   - title: twitter
+#     url: https://twitter.com/SBootstrap
+#   - title: github
+#     url: https://github.com/IronSummitMedia/startbootstrap
+#   - title: linkedin
+#     url:
+
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+#
+JB :
+  version : 0.3.0
+
+  # All links will be namespaced by BASE_PATH if defined.
+  # Links in your website should always be prefixed with {{BASE_PATH}}
+  # however this value will be dynamically changed depending on your deployment situation.
+  #
+  # CNAME (http://yourcustomdomain.com)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Pages (http://username.github.io)
+  #   DO NOT SET BASE_PATH
+  #   (urls will be prefixed with "/" and work relatively)
+  #
+  # GitHub Project Pages (http://username.github.io/project-name)
+  #
+  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
+  #
+  # CAUTION:
+  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
+  #   - Only the following values are falsy: ["", null, false]
+  #   - When setting BASE_PATH it must be a valid url.
+  #     This means always setting the protocol (http|https) or prefixing with "/"
+  BASE_PATH : false
+
+  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
+  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  #
+  # Override this by defining an absolute path to assets here.
+  # ex:
+  #   http://s3.amazonaws.com/yoursite/themes/watermelon
+  #   /assets
+  #
+  ASSET_PATH : /assets
+
+  # These paths are to the main pages Jekyll-Bootstrap ships with.
+  # Some JB helpers refer to these paths; change them here if needed.
+  #
+  blog_path: /blog/
+  archive_path: /blog/archive.html
+  categories_path : /blog/categories.html
+  tags_path : /blog/tags.html
+  rss_path : /blog/rss.xml
+
+  # Settings for comments helper
+  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to false to turn commenting off globally.
+  #
+  comments :
+    provider : disqus
+    disqus :
+      short_name : kitt-ai
+    livefyre :
+      site_id : 123
+    intensedebate :
+      account : 123abc
+    facebook :
+      appid : 123
+      num_posts: 5
+      width: 580
+      colorscheme: light
+
+  # Settings for analytics helper
+  # Set 'provider' to the analytics provider you want to use.
+  # Set 'provider' to false to turn analytics off globally.
+  #
+  analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-62235408-1'
+    getclicky :
+      site_id :
+    mixpanel :
+        token : '_MIXPANEL_TOKEN_'
+    piwik :
+        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+        idsite : '1'                   # the id of the site on Piwik
+
+  # Settings for sharing helper.
+  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+  # Set 'provider' to the sharing provider you want to use.
+  # Set 'provider' to false to turn sharing off globally.
+  #
+  sharing :
+    provider : false
+
+  # Settings for all other include helpers can be defined by creating
+  # a hash with key named for the given helper. ex:
+  #
+  #   pages_list :
+  #     provider : "custom"
+  #
+  # Setting any helper's provider to 'custom' will bypass the helper code
+  # and include your custom code. Your custom file must be defined at:
+  #   ./_includes/custom/[HELPER]
+  # where [HELPER] is the name of the helper you are overriding.
