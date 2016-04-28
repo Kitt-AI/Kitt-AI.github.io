@@ -99,7 +99,7 @@ $(document).ready(() => {
 
   var mySwiper = new Swiper('.swiper-container', {
     simulateTouch: false,
-    //loop: true,
+    autoplay: 2000,
     onSlideChangeEnd: function (swiper) {
       //var swiperPage = mySwiper.activeIndex;
       toggleActive(swiper.activeIndex);
