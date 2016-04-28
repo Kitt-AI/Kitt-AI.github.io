@@ -9,7 +9,7 @@ $(document).ready(() => {
   var carousels = [
     [
       {
-        "src": "src/images/philips.svg",
+        "src": "src/images/philips.new.png",
         "text": "Philips"
       },
       {
@@ -17,7 +17,7 @@ $(document).ready(() => {
         "text": "Raspberry Pi"
       },
       {
-        "src": "src/images/logo_nest.svg",
+        "src": "src/images/nest_thermostat_logo.new.png",
         "text": "Nest"
       }
     ],
@@ -31,11 +31,11 @@ $(document).ready(() => {
         "text": "Yelp"
       },
       {
-        "src": "src/images/Starbucks.png",
-        "text": "Starbucks"
+        "src": "src/images/Spotify.png",
+        "text": "Spotify"
       },
       {
-        "src": "src/images/uber.svg",
+        "src": "src/images/uber.new.png",
         "text": "Uber"
       }
     ],
@@ -45,7 +45,7 @@ $(document).ready(() => {
         "text": "Twilio"
       },
       {
-        "src": "src/images/AmazonEcho.svg",
+        "src": "src/images/AmazonEcho.new.png",
         "text": "Amazon Echo"
       },
       {
