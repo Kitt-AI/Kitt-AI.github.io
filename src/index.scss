@@ -387,6 +387,13 @@ div[class*=col-] {
       display: inline-block;
     }
   }
+
+  &-legal > a {
+    color: #b0b0b0;
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
 }
 
 .carousel-block {
