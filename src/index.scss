@@ -84,21 +84,6 @@ div[class*=col-] {
   }
 }
 
-.border-left {
-  position: relative;
-  padding-left: 2rem;
-
-  &::before {
-    content: '';
-    height: 100%;
-    width: 2px;
-    background-color: $brand-blue;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-}
-
 // Common styles
 .flex {
   display: flex;
@@ -113,6 +98,21 @@ div[class*=col-] {
 
   &-center-horizontally {
     justify-content: center;
+  }
+}
+
+.border-left {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: $brand-blue;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -226,7 +226,7 @@ div[class*=col-] {
     padding-bottom: 2rem;
 
     @include media-breakpoint-up(md) {
-      background: url(/dist/src/images/landing_semantic-lighting.png) right center / 45% no-repeat;
+      background: url(./images/landing_semantic-lighting.png) right center / 45% no-repeat;
       padding-top: 13rem;
       padding-bottom: 10rem;
     }
@@ -237,7 +237,7 @@ div[class*=col-] {
     padding-bottom: 2rem;
 
     @include media-breakpoint-up(md) {
-      background: url(/dist/src/images/landing_hotword-detection.png) left center / 45% no-repeat;
+      background: url(./images/landing_hotword-detection.png) left center / 45% no-repeat;
       padding-top: 13rem;
       padding-bottom: 10rem;
     }
@@ -248,7 +248,7 @@ div[class*=col-] {
     padding-bottom: 2rem;
 
     @include media-breakpoint-up(md) {
-      background: url(/dist/src/images/landing_nlu-chatflow.png) right center / 45% no-repeat;
+      background: url(./images/landing_nlu-chatflow.png) right center / 45% no-repeat;
       padding-top: 13rem;
       padding-bottom: 10rem;
     }
@@ -259,7 +259,7 @@ div[class*=col-] {
     padding-bottom: 2rem;
 
     @include media-breakpoint-up(md) {
-      background: url(/dist/src/images/landing_team-bg.png) right bottom no-repeat;
+      background: url(./images/landing_team-bg.png) right bottom no-repeat;
       padding-top: 13rem;
       padding-bottom: 10rem;
     }
@@ -380,6 +380,26 @@ div[class*=col-] {
     color: $brand-grey;
     font-weight: 300;
     @include font-size(14px);
+
+    .fa-heart {
+      color: #ff0000;
+    }
+
+    .fa-coffee {
+      color: #6F4E37;
+    }
+
+    .fa-umbrella {
+      color: #007FFF;
+    }
+
+    .fa-plane {
+      color: #0F52BA;
+    }
+
+    .fa-diamond {
+      color: #50C878;
+    }
   }
 
   &-brand-name {
@@ -391,8 +411,7 @@ div[class*=col-] {
   &-legal > a {
     color: #b0b0b0;
     font-weight: 300;
-    font-size: 14px;
-    font-size: 0.875rem;
+    @include font-size(14px);
   }
 }
 
@@ -540,8 +559,6 @@ div[class*=col-] {
 
   }
 }
-
-
 
 .swiper-container {
   width: 100%;
@@ -765,5 +782,18 @@ div[class*=col-] {
         left: 85%;
       }
     }
+  }
+}
+
+.carousel-next-btn,
+.carousel-prev-btn {
+  outline: 0;
+
+  @include hover-focus {
+    outline: 0;
+  }
+
+  &:active:focus {
+    outline: 0;
   }
 }

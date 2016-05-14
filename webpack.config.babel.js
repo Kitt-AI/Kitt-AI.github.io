@@ -6,7 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 const config = {
-  devtool: 'sourcemap',
   entry: {
     app: [
       './src/index.scss',
@@ -15,30 +14,17 @@ const config = {
     ],
   },
   module: {
-    //preLoaders: [
-    //  { test: /\.js$/, exclude: [/vendor/, /node_modules/], loader: 'eslint-loader' },
-    //],
+    preLoaders: [
+      { test: /\.js$/, exclude: [/node_modules/], loader: 'eslint-loader' },
+    ],
     loaders: [
-      { test: /\.js$/, exclude: [/vendor/, /node_modules/], loader: 'babel' },
-      { test: /\.html$/, loader: 'raw' },
-      { test: /\.yml$/, loader: 'json!yaml' },
-      { test: /\.scss$/, loader: "style!css!autoprefixer?browsers=last 2 versions!sass" },
-      { test: /\.css$/, loader: "style!css" },
+      { test: /\.js$/, exclude: [/node_modules/], loader: 'babel' },
+      { test: /\.html$/, loader: 'html' },
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!autoprefixer!sass') },
+      { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
       {
-        test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff',
-      }, {
-        test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff',
-      }, {
-        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/octet-stream',
-      }, {
-        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file',
-      }, {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=image/svg+xml',
+        test: /\.(gif|png|jpe?g|svg|webp|woff|woff2|ttf|eot|mp3|mp4|webm)(\?.+)?$/,
+        loader: 'file?name=[sha512:hash:base36:7].[ext]',
       },
     ],
   },
@@ -57,7 +43,7 @@ const config = {
       inject: true,
       hash: true,
     }),
-    new ExtractTextPlugin('index.css'),
+    new ExtractTextPlugin('index.css', { disable: NODE_ENV !== 'production' }),
   ],
 };
 
@@ -70,7 +56,7 @@ if (NODE_ENV === 'development') {
 } else if (NODE_ENV === 'production') {
   config.output = {
     filename: '[name].bundle.js',
-    publicPath: '',
+    publicPath: '/',
     path: path.resolve(__dirname, 'dist'),
   };
 
