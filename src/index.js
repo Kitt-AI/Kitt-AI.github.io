@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import 'bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 import Swiper from 'swiper';
 
 $(document).ready(() => {

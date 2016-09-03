@@ -36,10 +36,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "start": "npm run hot",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "start": "NODE_ENV=development webpack-dev-server --inline --hot",
     "prebuild": "rimraf ./dist/**/*",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "NODE_ENV=production webpack",
+    "serve": "cd dist && python -m SimpleHTTPServer",
     "lint": "eslint ./src/**/*.js"
   }
 }
