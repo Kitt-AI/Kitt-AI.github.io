@@ -40,6 +40,7 @@
     "prebuild": "rimraf ./dist/**/*",
     "build": "NODE_ENV=production webpack",
     "serve": "cd dist && python -m SimpleHTTPServer",
+    "postbuild": "cp -r ./dist/* ./",
     "lint": "eslint ./src/**/*.js"
   }
 }
