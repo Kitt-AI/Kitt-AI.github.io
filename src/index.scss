@@ -2,17 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 @import '~font-awesome/css/font-awesome.css';
 @import '~swiper/dist/css/swiper.min.css';
-
 // Core variables and mixins
-@import "~bootstrap/scss/variables";
+//@import "~bootstrap/scss/variables";
 @import "./styles/variables";
 @import "~bootstrap/scss/mixins";
 @import "./styles/mixins";
-
 // Reset and dependencies
 @import "~bootstrap/scss/normalize";
 @import "~bootstrap/scss/print";
-
 // Core CSS
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
@@ -22,7 +19,6 @@
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
-
 // Components
 //@import "~bootstrap/scss/animation";
 //@import "~bootstrap/scss/dropdown";
@@ -42,13 +38,11 @@
 //@import "~bootstrap/scss/list-group";
 //@import "~bootstrap/scss/responsive-embed";
 //@import "~bootstrap/scss/close";
-
 // Components w/ JavaScript
 //@import "~bootstrap/scss/modal";
 //@import "~bootstrap/scss/tooltip";
 //@import "~bootstrap/scss/popover";
 //@import "~bootstrap/scss/carousel";
-
 // Utility classes
 @import "~bootstrap/scss/utilities";
 
@@ -112,6 +106,7 @@ div[class*=col-] {
 
 .btn {
   transition: all .3s ease;
+  -webkit-appearance: inherit !important;
 }
 
 // Colors
@@ -463,7 +458,7 @@ div[class*=col-] {
     margin-bottom: 40px;
   }
 
-  &>div {
+  & > div {
     @include media-breakpoint-up(md) {
       float: left;
       margin: 0;
@@ -556,8 +551,8 @@ div[class*=col-] {
         }
 
         .active {
-           @include link-variant(#0008ff);
-           font-weight: bold;
+          @include link-variant(#0008ff);
+          font-weight: bold;
         }
       }
     }
@@ -648,7 +643,6 @@ div[class*=col-] {
     justify-content: center;
     text-align: center;
 
-
     img {
       max-width: 70%;
       max-height: 50%;
@@ -660,7 +654,6 @@ div[class*=col-] {
       background-color: #0008ff;
       width: 45%;
       height: 45%;
-
 
       @include media-breakpoint-up(lg) {
         &:after, &:before {
@@ -693,9 +686,9 @@ div[class*=col-] {
           border-radius: 50%;
           border: solid 3px #0008ff;
           z-index: 2;
-        };
+        }
+      ;
       }
-
 
     }
 
