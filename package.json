@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.4",
+    "bootstrap": "4.0.0-alpha.4",
     "font-awesome": "~4.5.0",
     "jquery": "~2.2.2",
     "swiper": "~3.3.1",
