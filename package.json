@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "4.0.0-alpha.4",
     "font-awesome": "~4.5.0",
-    "jquery": "~2.2.2",
+    "jquery": "~3.5.0",
     "swiper": "~3.3.1",
     "tether": "~1.2.0"
   },
